@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta data plus other -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>Bike shop in Kelso, Scottish Borders</title>
+        
+        
+        <!-- on mobile phones color of theme - of the top stripe for example -->
+        <meta name="theme-color" content="#9675BC">
+        
+        <!-- favicon-->
+        <link rel="icon" type="image/x-icon"  href="images/favicon_package/favicon.ico">
+        
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- Awesome library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        
+        
+        <!-- Lato google font 400, 700 and 900 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+         <!-- M PLUS ROUNDED FONT 500 700-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <!-- button scroll to top -->
+     <button onclick="topFunction()" id="scrolltopBtn" title="Go to top">Top</button>
+<!-- Header starts here -->        
+        <header>
+            <div class="top">
+                <h4>contact phone: +44 7878 787878</h4>
+               </div>
+               <nav class="navbar flex-container">
+                <div class="logo">
+                
+                <a href="index.html" class="navbar-brand">
+                    <!--logo icon-->
+                        <img src="images/bikeKingBordersLogo.svg" width="300" alt="Logo"> 
+                </a>
+                </div>    
+                                
+                <ul>
+                    <li><a class="nav-link active" href="index.html">HOME</a></li>
+                    <li><a class="nav-link" href="bikeShop.html">SHOP</a></li>
+                    <li><a class="nav-link" href="bikeRental.html">RENTAL</a></li>
+                    <li><a class="nav-link" href="bikeRepairs.html">REPAIRS</a></li>
+                    <li><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
+               </nav>
+        </header>
+
+<!-- Main starts here -->   
+
+<!-- Hero image -->
+        <main class="container">
+            <div class="image-container">
+                    <img src="images/bikeKingHeroImageSmall.png" alt="BIke illustration">
+                    
+            </div>
+
+<!-- Welcome section -->
+            <div class="container flex-container">
+            <section id="welcome-section">
+                <div class="message message1">
+                    <h1> Hello!</h1>
+                    <h3> I am the Bike King and I love bicycles.<br> I sell them, rent them out and repair them.<br> My team and I operate in the Scottish Borders, based in Kelso. That's why we call ourselves<br> Bike King Borders.</h3>
+                </div>
+                <div class="message">
+                    <img src="images/bikeKing.webp" alt="Bike King portrait photo with bicycle">
+                </div>
+            </section>
+            </div>
+
+<!-- 3 services section -->
+            <div class="container flex-container">
+                    <section id="services" class="services">
+                       <h1 class="section-heading">Our services</h1>
+                           <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                               <ul class="cards">
+                                    
+                                <li class="card">
+                                    <a href="bikeShop.html">   
+                                    <img src="images/bkShop.jpg" alt="Bicycles in BK shop">
+                                       <h1>SHOP</h1>
+                                       <h3>We sell bikes and accessories</h3>
+                                       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, vel.</p>
+                                    </a>
+                                    </li>
+                                        <li class="card">
+                                        <a href="bikeRental.html">   
+                           <img src="images/bkRental.jpg" alt="Man with bike on his arm">
+                           <h1>RENTAL</h1>
+                           <h3>We hire out bikes and accessories</h3>
+                           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, vel.</p>
+                        </a>
+                        </li>
+                        <li class="card">
+                            <a href="bikeRepairs.html">
+                            <img src="images/bkRepairs.jpg" alt="Bicycle repaired by a man in BK shop">
+                            <h1>REPAIRS</h1>
+                            <h3>We repair and servicing bikes</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, vel.</p>
+                            </a>
+                        </li>
+                   </ul>
+            </section>
+            </div>  
+<!-- End of 3 services section -->  
+
+<!-- Bestsellers starts here -->
+<section class="bikemenu bestsellers">
+    <h1 class="section-heading">Our bestsellers</h1>
+           <div class="box-container">
+        <div class="boxBike">
+            <a target="_blank" href="images/products/hybrid4.jpg">
+                <img src="images/products/hybrid4.jpg" alt="hybrid bike with purple gold frame"></a>
+            <h3> Hybrid Bike 1</h3>
+            <div class="price">£ ask at the shop
+            </div>
+<!-- modal 1 here -->            
+            <button id="modalBtn" class="btn">contact</button>
+            <div id="modalSorry" class="modal">
+                <div class="modal-content"><span class="close">&times;</span>
+                    
+                <img src="images/Sorry-king-message.png" alt="Sorry from Bike King for not selling online yet" id="modalImage"> 
+                </div>
+            </div> <!-- end of modal -->
+        </div>
+        <div class="boxBike">
+            <a target="_blank" href="images/products/cargo2.jpg">
+            <img src="images/products/cargo2.jpg" alt="Cargo new bestseller bike"></a>
+            <h3> Cargo Bike </h3>
+            <div class="price">£ ask at the shop
+            </div>
+            <!-- modal 2 here -->            
+            <button id="modalBtn2" class="btn">contact</button>
+            <div id="modalSorry2" class="modal">
+                <div class="modal-content"><span class="close">&times;</span>
+                <img src="images/Sorry-king-message.png" alt="Sorry from Bike King for not selling online yet" id="modalImage2"> 
+                </div>
+            </div> <!-- end of modal -->
+        </div>
+        <div class="boxBike">
+            <a target="_blank" href="images/products/city1.jpg">
+            <img src="images/products/city1.jpg" alt="City bike"></a>
+            <h3> City Bike 1</h3>
+            <div class="price">£ ask at the shop
+            </div>
+            <!-- modal 3 here -->            
+            <button id="modalBtn3" class="btn">contact</button>
+            <div id="modalSorry3" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    
+                <img src="images/Sorry-king-message.png" alt="Sorry from Bike King for not selling online yet" id="modalImage3"> 
+                </div>
+            </div> <!-- end of modal -->
+        </div>
+    </div> 
+
+</section>
+
+
+
+<!-- End of bestsellers -->
+
+
+
+<!-- reviews section starts here -->
+
+<section class="reviews" id="reviews">
+<h1 class="section-heading">Customer's reviews</h1>
+<div class="box-container">
+    <div class="box-review">
+        <span><i class="fa-solid fa-quote-left"></i></span> 
+        <p>I took my bike to Bike King Borders for a tune-up, and I couldn’t be happier with the service. The technicians were incredibly skilled and quickly diagnosed and fixed the issues with my bike. They were transparent about the repairs needed and the costs involved. My bike now rides like it's brand new! The customer service was friendly and professional throughout the entire process. I highly recommend Bike King Borders for any bike repair needs. I'll definitely be returning for any future services!
+        </p>
+        <img src="images/rev1.jpg" class="user" alt="Bike user">
+        <h3>Leo</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+
+    </div>
+    <div class="box-review">
+        <span><i class="fa-solid fa-quote-left"></i></span> 
+        <p>The rental process was smooth, and the staff was friendly and helpful. The bike I rented was in excellent condition and performed wonderfully on the trails. However, I did encounter a small issue: the helmet provided was a bit uncomfortable.</p>
+        <img src="images/rev2.jpg" class="user" alt="Bike user">
+        <h3>Mark S.</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+         </div>
+
+    </div>
+    <div class="box-review">
+        <span><i class="fa-solid fa-quote-left"></i></span> 
+        <p>I recently purchased a new mountain bike from Bike King Borders, and the entire experience was fantastic! The staff was incredibly knowledgeable and helped me choose the perfect bike for my needs. </p>
+        <img src="images/rev3.jpg" class="user" alt="Bike user">
+        <h3>Adam</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+
+    </div>
+    
+</div>
+
+
+</section>
+
+
+<!-- reviews ends -->            
+        </main>
+<!-- Footer starts here -->        
+
+<footer>
+    <!-- Footer About section - display only on large and up -->
+    
+                <div class=" flex-container wrapper">
+                    <section class="box about" id="about1" >
+                        <h2>About Us</h2>
+                        <p>Bike King Borders is a growing company based in the Borders region of Scotland. </p>
+                        
+                        <div>
+                          <h3>Our Mission</h3>
+                          <p>The company sell and repair road, mountain and hybrid bikes as well as sell a range of bike accessories and clothing. In addition, they hire out bikes for daily use on nearby off-road bike trails.</p>
+                          <h3>Our Vision</h3>
+                          <p>The company are unique in the Borders due to their location and having the benefit of brilliant cycle trails on their doorstep. They pride themselves in selling only quality products and guaranteeing servicing and repair. </p>
+                        </div>
+                        <div>
+                          <h3>Our Team</h3>
+                          <ul id="name1">
+                            <li>Scott Kenny - Bike King Founder and CEO</li>
+                            <li>Harry Strong - Vice King, Gear Specialist</li>
+                          </ul>
+                        </div>
+                      </section>
+               
+    <!-- Another box with quick info -->
+                <div class="flex-container box box-column">
+                    <section class="quickLinks">
+                        <h2>Quick links</h2>
+                        <a href="index.html">Home</a> 
+                        <span class="vertical-line"></span>
+                        <a href="contact.html">Contact</a>
+                        <span class="vertical-line"></span>
+                        <a href="#">FAQ</a>
+                        <span class="vertical-line"></span>
+                        <a href="#">Careers</a>
+                        <span class="vertical-line"></span>
+                        <a href="#">Private policy</a>
+                        <span class="vertical-line"></span>
+                        <a href="#">Cookies Policy</a>
+                        <span class="vertical-line"></span>
+                        <a href="#">Terms and Conditions</a>
+                    </section>
+                    
+                    <div class="quickContact">
+                        <h2>Quick contact</h2>
+                        <ul class="infoContact">
+                            <li>
+                                <span>
+                                    <i class="fa-solid fa-phone"></i>
+                                </span>
+                                <p>
+                                    +44 7878 787878
+                                </p>
+                            </li>
+                            <li>
+                                <span>
+                                    <i class="fa-solid fa-comment-sms"></i>
+                                </span>
+                                <p>
+                                    +44 7878 787878
+                                </p>
+                            </li>
+                            <li>
+                                <span>
+                                    <i class="fa-regular fa-envelope"></i>
+                                </span>
+                                <p>
+                                    contact@bikekingborders.co.uk
+                                </p>
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-shop"></i>
+                                </span>
+                                <p>
+                                30 Bridge St,<br>
+                                Kelso TD5 7JD
+                                </p>
+                            </li>
+                            <li>
+                                <span><i class="fa-regular fa-clock"></i>
+                                </span>
+                                <h2>open everyday
+                                9am - 7pm
+                                </h2>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+    <!-- Last box with Social   -->
+                <div class="flex-container box">
+                    <div class="followUs">
+                        <h2>Follow us</h2>
+                        <ul class="socialmedia">
+                            <li><a href="https://www.facebook.com/VisitKelso/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/visitkelso/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/watch?v=zkQT_J0E8ws" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>  
+                
+                </div>
+                </div>
+            </footer>
+    <!-- Copyright text -->
+    <div class="container footerBottom">
+        <p>&copy; 2024 Ewa Koci</p>
+    </div>            
+    <script src="js/scrolltopButton.js"></script>
+    <script src="js/modal.js"></script>
+    </body>
+</html>

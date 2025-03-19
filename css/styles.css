@@ -1,0 +1,1134 @@
+
+
+:root { 
+--gold:#e0dc23; /*rgb 224,220,35 - gold*/
+--dark-king-purple: #220840; /*rgb 34, 8 ,64 - dark king purple*/
+--medium-purple: #4a118c; /*rgb 74,17,140- medium purple*/
+--sharp-purple: #7d1ce6; /*rgb 125, 28, 230 - sharp  purple */
+--berry-purple: #9675bc; /*rgb 150, 117, 188-  berry purple */
+--border1: 0.1rem solid rgba(0,0,0,0.3);
+}
+
+
+* {
+    box-sizing: border-box;
+    /* The code ensures that all elements are sized in this more intuitive way and is good practice.*/
+    outline:none;
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s linear;
+    letter-spacing: 0.07em;
+    
+}
+  
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+
+    
+}
+
+/* caly pasek przewijania, all scroll bar lenght and hight*/
+html::-webkit-scrollbar {
+width: 0.8rem;
+}
+
+/* tor paska przewijania, scroll track */
+html::-webkit-scrollbar-track {
+background: transparent;
+}
+
+
+/* uchwyt paska przewijania - scroll bar thumb*/
+html::-webkit-scrollbar-thumb {
+    background: #9675bc;
+    border-radius: 5rem;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    background-color:white;
+    
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+display: flex;
+flex-direction: row-reverse;
+border-bottom:  0.1rem solid rgba(0,0,0,0.1);
+padding: 0 2rem;
+max-height: 3rem;
+margin: 0 3rem;
+}
+
+.top h4 {
+    padding: 0%;
+    margin: 0.5%;
+}
+
+.navbar {
+
+    margin-top: 1rem;
+    padding: 20px 20px;
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top:0;
+    left: 0;
+    background-color: white;
+    
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 10px auto;
+    width: 55%;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+
+
+.navbar ul li a {
+    margin-left: 3px;
+    color: #220840;
+    opacity: 0.8;
+    font-size: x-large;
+    font-family:"Lato", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.navbar ul li a:hover {
+    color: black;
+    background-color: #e0dc23;
+    text-decoration: none;
+}
+
+
+.navbar-brand img {
+    width: 300px;
+    height: inherit;
+    margin-left: 2em;
+}
+
+
+/*logo without hoover effect
+*/
+.navbar-brand:hover {
+    background:none; 
+
+}
+
+
+.active {
+    background-color: #e0dc23;
+}
+
+.container {
+    margin: 0%;
+}
+
+/* animation transition of hero bike img while uploading the home page*/
+.image-container {
+    width: 100%;
+    border-right-style: solid;
+    border-color: black;
+    border-right-width: 0.3em;
+    border-bottom: 0em;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgba(0,0,0, 0.1);;
+    
+    } 
+
+ 
+@keyframes slide-right {
+    from {
+        transform: translateX(-100px);
+    }
+    to { transform: translateX(0px);
+    }
+}
+
+
+.image-container img {
+    width: 100%;
+    animation: slide-right 2s ease-out;
+    
+}
+
+
+h1 {
+    font-family:  "M PLUS Rounded 1c", "Lato", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #220840;
+
+}
+
+
+h2,
+h3
+ {
+    font-family:"Lato",Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: #220840;
+}
+
+h4,
+h5,
+h6
+ {
+    font-family:"Lato",Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: #220840;
+}
+
+p {
+   color:rgba(0,0,0, 0.9);
+
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items:flex-start;
+    padding: 0px;
+    
+    
+}
+
+
+
+#welcome-section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0,0,0, 0.1);
+    margin: 0px;
+    border: 0px;
+    padding: 0%;
+    width: 100%;
+    
+    
+
+}
+
+.message {
+    display: flex;
+    margin: 1em;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    }
+
+.message1 {
+    display: block;
+    row-gap: 10px;
+    column-gap: 30px;
+    text-align:justify;
+    padding: 2em;
+}    
+
+.message1 h1 {
+    font-size: 5em;
+}
+
+.message img {
+    max-width: 100%;
+    
+    border-radius: 1.5em 18em 1em 14em / 6em 1em 24em 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+section .services {
+    display: flex;
+    align-items: center;
+    padding: 80px 0 0;
+    flex-direction: column;
+    
+}
+
+
+.services h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.services p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+section .cards {
+    display: flex;
+    margin-top: 50px;
+    padding: 0 10px;
+    justify-content:space-evenly;
+}
+
+section .cards .card {
+    background: rgba(0,0,0, 0.1);
+    padding: 40px 15px;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    margin-bottom: 40px;
+    width: calc(100% / 3 - 30px);
+    text-align: center;
+}
+
+.services .card img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    object-fit: cover;
+    border-color: #220840;
+    border-style: solid;
+    border-inline-color:#4a118c;
+    border-width: 0.2em;
+    
+    
+}
+
+.cards .card p {
+    padding: 0 15px;
+    margin-top: 5px;
+    
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    background-color: rgba(74,17,140, 0.5);
+    padding: 20px;
+}
+
+.vertical-line {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    vertical-align: middle;
+}
+
+footer .infoContact {
+    list-style: none;
+    display: block;
+}
+
+.infoContact li:hover {
+    background-color: #e0dc23;
+} 
+
+.followUs {
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: end;
+    
+}
+
+.socialmedia {
+    list-style: none;
+    justify-content: space-between;
+    align-content:space-between;
+}
+
+.socialmedia li i {
+   font-size: 5em;   
+   margin: 0.2em;
+   opacity: 0.7;
+   color: #7d1ce6;
+   
+}
+
+.socialmedia li i:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: rgba(0,0,0, 0.1);
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    width: 100%;
+    background-color: rgba(74,17,140, 0.5);
+    padding: 2rem;
+    margin: 0;
+    max-height: 3em;
+
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.box {
+    flex: 1 1 30%;
+    padding: 10px;
+    text-align:justify;
+    margin-right: 2em;
+}
+
+.box-column {
+ flex-wrap: wrap;
+ justify-content: flex-start;
+row-gap: 2em;
+ align-content: space-between;
+}
+
+
+#about1 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content:space-between;
+    align-items: flex-start;
+    row-gap: 10px;
+    column-gap: 10px;
+    text-align:justify;
+}
+
+.box .quickLinks a {
+    margin: 5px;
+    color: #220840;
+    opacity: 0.7;
+    font-size: x-large;
+    font-family:"Lato", Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+
+}
+
+.box .quickLinks a:hover {
+    color: black;
+    background-color: #e0dc23;
+    text-decoration: none;
+
+}
+
+
+#name1 {
+    list-style: none;
+}
+
+#name1 li::before {
+       content: "🚲";
+
+}
+
+
+.bikesSRR {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.btn {
+ margin-top: 1rem;
+ display: inline-block;
+ padding: 0.9rem 3rem;  
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: black;
+  background: var(--berry-purple);
+  cursor: pointer;
+}
+
+.btn:hover {
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+.box-container .boxBike .btn {
+    width: 60%;
+    text-align: center;
+} 
+
+.bikemenu {
+    margin: 4rem 1rem;
+        
+}
+
+bold {
+    opacity: 0.7;
+}
+
+.bikemenu  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    
+}
+
+.bikemenu .section-heading {
+    margin-left: 2rem;
+    padding-top: 2rem;
+}
+
+.bikemenu > h3 {
+margin: 1rem;
+width: 75%;
+text-align: justify;
+}
+
+.bikemenu >h4 {
+    margin: 1rem;
+    padding: 1.5rem;
+    column-gap: 2rem;
+    columns: 2;
+    text-align: justify;
+}
+
+.bikemenu .box-container .boxBike {
+    padding: 3rem;
+    text-align: center;
+    
+    background:  linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1)), url("../images/backgrounds/steampunkGold.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.bikemenu .box-container .boxBike img {
+    height: 20rem;
+}
+
+.bikemenu .box-container .boxBike h3{
+    color:#220840;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.bikemenu .box-container .boxBike .price{
+    color:#220840;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.bikemenu .box-container .boxBike:hover {
+    background: rgba(0,0,0,0.1);
+}
+
+.bikefitting .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: white;
+}
+
+.bikefitting .row .youtube {
+    flex: 1 1 40rem;
+    width: 100%;
+    object-fit: cover;
+    padding: 1rem;
+}
+
+.bikefitting .row .youtubeText {
+    flex: 1 1 20rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.bikefitting .row .youtubeText p {
+    font-size: 1.2rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    text-align: justify;
+}
+
+.bikefitting .row .youtubeText h2 {
+    font-size: 2rem;
+    color: #220840;
+
+}
+
+.bikefitting .row .youtubeText h3 {
+    font-size: 1.8rem;
+    color: #220840;
+}
+
+.reviews {
+    background-color: rgba(0,0,0,0.1);
+    margin-bottom: 0%;
+    
+}
+
+.reviews .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    margin: 3rem;
+    margin-bottom: 0%;
+    padding: 2rem;
+    padding-top: 0%;
+
+}
+
+.reviews > h1 {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.reviews .box-container .box-review {
+    border: var(--border1);
+    text-align: center;
+    padding: 3rem 2rem;
+    max-height: 700px;
+    overflow-y: scroll;
+
+}
+
+.reviews .box-container .box-review p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 3rem 2rem;
+    
+}
+
+.reviews .box-container .box-review .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews .box-container .box-review .stars i {
+    padding: 1rem 0;
+    font-size: 1rem;
+    color:#e0dc23;
+}
+
+.reviews .box-container .box-review .fa-quote-left {
+    font-size: 2rem;
+}
+
+/* Contact page */
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact > h1 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.contact .row .map {
+    flex: 1 1 30rem;
+    width: 100%;
+    object-fit: cover;
+    padding: 0 1rem;
+}
+
+.contact .row form {
+    flex: 1 1 30rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: "M PLUS Rounded 1c", "Lato", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact .row form .inputBox {
+    display:flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: var(--border1);
+}
+
+.contact .row form .inputBox span {
+    color:#9675bc;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    text-transform: none;
+
+}
+
+.address {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/backgrounds/shop.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+
+}
+
+.address .content {
+    max-width: 60rem;
+}
+
+.address .content h3{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    padding: 3rem;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.address .content p {
+    color: white;
+    text-transform: uppercase;
+    padding: 0 3rem;
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.address .content p:hover {
+    background-color:#7d1ce6
+}
+
+.address .content h3:hover {
+    background-color:#7d1ce6;
+}
+
+
+.rentalHero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/backgrounds/couple-forest.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+
+}
+
+.rentalHero .contentRental {
+    max-width: 60rem;
+}
+
+.rentalHero .contentRental h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    padding: 3rem;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.rentalHero .contentRental p {
+    color: white;
+    text-transform: uppercase;
+    padding: 0 3rem;
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.rentalHero .contentRental p:hover {
+    background-color:#7d1ce6
+}
+
+.rentalHero .contentRental h3:hover {
+    background-color:#7d1ce6;
+}
+
+/*Repairs hero*/
+
+.repairHero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/backgrounds/bikeKing-workshop.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+
+}
+
+.repairHero .contentRepair {
+    max-width: 60rem;
+}
+
+.repairHero .contentRepair h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    padding: 3rem;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.repairHero .contentRepair p {
+    color: white;
+    text-transform: uppercase;
+    padding: 0 3rem;
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.repairHero .contentRepair p:hover {
+    background-color:#7d1ce6
+}
+
+.repairHero .contentRepair h3:hover {
+    background-color:#7d1ce6;
+}
+
+.rentalLogo {
+    background-color: rgba(255,255,255,0.3);
+
+}
+
+
+.shopHero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/backgrounds/bikeKing-shopHero.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+
+}
+
+.shopHero .contentShop {
+    max-width: 60rem;
+}
+
+.shopHero .contentShop h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    padding: 3rem;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.shopHero .contentShop p {
+    color: white;
+    text-transform: uppercase;
+    padding: 0 3rem;
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.shopHero .contentShop p:hover {
+    background-color:#7d1ce6
+}
+
+.shopHero .contentShop h3:hover {
+    background-color:#7d1ce6;
+}
+
+/* Gallery */
+
+.gallery .section-heading {
+    
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.gallery p {
+    text-align: center;
+}
+
+.gallery .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+    margin-bottom: 4rem;
+    
+}
+
+.gallery .column {
+    flex: 32%;
+    max-width: 32%;
+    padding: 0 4px;
+}
+
+.gallery .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.gallery .mapGallery1 {
+    flex: 1 1 auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .mapGallery2 {
+    flex: 1 1 auto;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.mapGallery {
+    padding-bottom: 4rem;
+}
+
+.bestsellers > h1 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+
+/*scroll to top button */
+
+#scrolltopBtn {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 100;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    background-color:#220840;
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1.5em 28em 1em 14em / 16em 3em 24em 4em;
+}
+
+#scrolltopBtn:hover {
+    opacity: 0.7;
+}
+
+/* modal window */
+
+.modal {
+    display: none;
+    position:fixed;
+    z-index: 99;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* close button */
+.close {
+   color:#e0dc23;
+   justify-self: flex-end;
+   font-size: 35px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color:#7d1ce6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+} 
+
+/* Responsiveness here - media query */
+
+
+@media screen and (max-width: 900px) {
+
+    html {
+        font-size: 85%;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 5px;
+        border: 0px;
+        justify-content:center;
+        align-content: center;
+        align-items:stretch;
+    }
+
+    .container {
+         margin: 0px; 
+    }
+
+    .navbar {
+        height:auto;
+        padding: 1.5rem 2rem;
+        flex-direction: column;
+        justify-content:center;
+        align-content: center;
+        align-items:center;
+    }
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        justify-content:left;
+        
+        list-style: none;
+    
+    }
+    .nav-link {
+        
+        display: block;
+        height: 6svh;
+        top: 75px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    #welcome-section {
+        display: block;
+    }
+
+    #welcome-section .message1 {
+        display:block;
+        row-gap: 0em;
+        column-gap: 0em;
+    } 
+
+    #welcome-section .message {
+        width: 100%;
+        margin: 0em;
+        padding: 3em;
+        row-gap: 0px;
+        column-gap: 0px;
+
+    }    
+    .services {
+        display: flex;
+     height: auto;
+     flex-direction: column;
+    }  
+
+    .services ul {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        list-style: none;
+    } 
+
+
+    section .cards .card {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+  
+      section > p {
+        text-align: center;
+      }
+
+      footer {
+        display: block;
+        
+      }
+
+      #about1 {
+        display: none;
+      }
+
+      footer .column {
+        margin: 5px;
+      }
+
+      .socialmedia {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        font-size: 0.8em;
+
+      }
+
+      .footerBottom {
+        justify-content: flex-end;
+      }
+
+      .box {
+        flex: 1 1 100%;
+      }
+
+      
+}
+
+@media screen and (max-width: 550px) {
+
+    
+
+    .reviews h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .shopHero .contentShop h3 {
+        font-size: 2.5rem;
+    }
+    .shopHero .contentShop p {
+        font-size: 1.5rem;
+    }
+
+    .gallery .column {
+       flex: 100%;
+       max-width: 100%;
+    }
+}
