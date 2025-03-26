@@ -1,4 +1,4 @@
-# Bicyckle shop website
+# Bicycle shop website
 
 ## Description
 Edinburgh College student project of the bicycle shop website 
