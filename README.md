@@ -1,4 +1,10 @@
-# Bicycle shop website
+
+#my BIcycle shop page made in Edinburgh College 
+
+-html
+-css
+-javascript 
+
 
 ## Description
 Edinburgh College student project of the bicycle shop website 
@@ -19,3 +25,4 @@ In the building phase
 
 ## Author
 Project made by Ewa Kociszewska
+
