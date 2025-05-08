@@ -1132,3 +1132,16 @@ text-align: justify;
        max-width: 100%;
     }
 }
+
+
+.repair-welcometext {
+    margin: 3rem;
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.column-break {
+    break-before: column;
+    display: block;
+    height: 0;
+}
