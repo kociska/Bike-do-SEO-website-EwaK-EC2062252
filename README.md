@@ -15,7 +15,7 @@ In the building phase
 - keywords placed in the header on home page and on the all subpages 
 - meta descriptions placed  in the header on the home pahe and all subpages 
 -  use of headers H1 - H3
--  SEO optimisation of  body text 
+-  SEO optimisation of  body text - new text instead of lorem ipsum or corrected text
 
 ## Author
 Project made by Ewa Kociszewska
